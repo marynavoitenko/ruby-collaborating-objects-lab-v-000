@@ -32,6 +32,7 @@ class Artist
   def self.find_or_create_by_name(artist_name)
     if !(@@all.detect {|artist| artist.name == artist_name})
         artist = self.new(artist_name)
+        artist.save
         #how to add that song
         #artist.add_song()
 

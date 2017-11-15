@@ -8,7 +8,6 @@ class MP3Importer
 
   def files
     Dir.entries(self.path).select{ |f| f.match(/(\.mp3)$/) }
-
   end
 
   def import

@@ -33,7 +33,7 @@ class Artist
     if !(@@all.detect {|artist| artist.name == artist_name})
         artist = self.new(artist_name)
         @@all << self
-        self
+        self.name
         #how to add that song
         #artist.add_song()
 

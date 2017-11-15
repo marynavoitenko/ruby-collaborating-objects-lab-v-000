@@ -14,6 +14,6 @@ class MP3Importer
     if !self.files.nil?
       self.files.each {|filename| Song.new_by_filename(filename)}
     end
-    (Artist.all.first.songs.empty?) && (Artist.all.last.songs.empty?)
+    # (Artist.all.first.songs.empty?) && (Artist.all.last.songs.empty?)
   end
 end

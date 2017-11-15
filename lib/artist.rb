@@ -12,7 +12,7 @@ class Artist
   #   @name = name
   # end
 
-  def add_song(song)
+  def self.add_song(song)
       @songs << song
       song.artist=(self)
   end
@@ -34,8 +34,10 @@ class Artist
         artist = self.new(artist_name)
         artist.save
         artist
+      else
         #how to add that song
         #artist.add_song()
+        #self.add_song()
 
       end
   end

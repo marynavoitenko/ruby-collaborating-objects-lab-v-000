@@ -29,11 +29,6 @@ class Artist
         artist = self.new(artist_name)
         artist.save
         artist
-      else
-        #how to add that song
-        #artist.add_song()
-        #self.add_song()
-
       end
   end
 

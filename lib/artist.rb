@@ -7,8 +7,10 @@ class Artist
     @songs = []
   end
 
+  
+
   def add_song(song)
-      @songs << song
+      @songs << song unless @songs.include?(song)
       song.artist=(self)
   end
 
